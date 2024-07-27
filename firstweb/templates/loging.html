@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>login!!</title>
+        <link rel="stylesheet" href="/static/css/sytle.css">
+        <link rel="icon" href="/static/images/normal-client.9013fc3f.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        <div class="container">
+           <form action="/login" method="post" id="dl">
+                <input type="text" name="user" placeholder="账号" minlength="8" maxlength="10" required>
+                <input type='password' id="mima"  name="pwd" placeholder="密码" minlength="8" maxlength="16" required>
+                
+                <p>
+                    <input type="text" placeholder="验证码" name="yzm" required>
+                    <img src='' alt="!!">
+                    <a href="#">看不清换一张</a>
+                </p>
+                <p id="error">{{error}}</p>
+                <input type='submit' name="sub" value="登录">
+                <input id="1" type="submit" name="sub" value="注册"> 
+           </form>
+        </div>
+    </body>
+    <script src="/static/js/res.js" type="text/javascript">
+           
+    </script>
+</html>
