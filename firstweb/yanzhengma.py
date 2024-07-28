@@ -80,3 +80,10 @@ def check_code(width=120, height=30, char_length=4, font_file='static/font/Alcoh
     # stream = StringIO.StringIO()
     # img.save(stream, 'png')
     # stream.getvalue()
+
+def mk_number():
+    a2 = ""
+    for i in range(5):
+        a1 = str(random.randint(0,9))
+        a2 += a1
+    return a2
